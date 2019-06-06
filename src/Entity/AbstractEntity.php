@@ -1,5 +1,5 @@
 <?php
-namespace Idealogica\OrmHelper\Object;
+namespace Idealogica\OrmHelper\Entity;
 
 use Doctrine\ORM\Event\LifecycleEventArgs;
 use Doctrine\ORM\Events;
@@ -12,10 +12,10 @@ use Respect\Validation\Validator;
 use function Idealogica\OrmHelper\mixedToString;
 
 /**
- * Class AbstractObject
- * @package Idealogica\OrmHelper
+ * Class AbstractEntity
+ * @package Idealogica\OrmHelper\Entity
  */
-abstract class AbstractObject
+abstract class AbstractEntity
 {
     const FIELD_ID = 'id';
 

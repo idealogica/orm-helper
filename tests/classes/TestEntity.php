@@ -1,12 +1,12 @@
 <?php
 use Doctrine\ORM\Mapping\ClassMetadata;
-use Idealogica\OrmHelper\Object\AbstractTimestampObject;
+use Idealogica\OrmHelper\Entity\AbstractTimestampEntity;
 use Respect\Validation\Validator;
 
 /**
  * Class TestEntity
  */
-class TestEntity extends AbstractTimestampObject
+class TestEntity extends AbstractTimestampEntity
 {
     const FIELD_INT_PROPERTY = 'intProperty';
 

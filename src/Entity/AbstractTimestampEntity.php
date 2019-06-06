@@ -1,5 +1,5 @@
 <?php
-namespace Idealogica\OrmHelper\Object;
+namespace Idealogica\OrmHelper\Entity;
 
 use Doctrine\ORM\Event\LifecycleEventArgs;
 use Doctrine\ORM\Mapping\ClassMetadata;
@@ -7,10 +7,10 @@ use Idealogica\OrmHelper\Exception;
 use Respect\Validation\Validator;
 
 /**
- * Class AbstractTimestampObject
- * @package Idealogica\OrmHelper
+ * Class AbstractTimestampEntity
+ * @package Idealogica\OrmHelper\Entity
  */
-abstract class AbstractTimestampObject extends AbstractObject
+abstract class AbstractTimestampEntity extends AbstractEntity
 {
     const FIELD_INSERTED_ON = 'insertedOn';
 
@@ -93,7 +93,7 @@ abstract class AbstractTimestampObject extends AbstractObject
     /**
      * @param \DateTime|null $insertedOn
      *
-     * @return AbstractTimestampObject
+     * @return AbstractTimestampEntity
      */
     public function setInsertedOn(\DateTime $insertedOn = null): self
     {
@@ -112,7 +112,7 @@ abstract class AbstractTimestampObject extends AbstractObject
     /**
      * @param \DateTime|null $updatedOn
      *
-     * @return AbstractTimestampObject
+     * @return AbstractTimestampEntity
      */
     public function setUpdatedOn(\DateTime $updatedOn = null): self
     {
