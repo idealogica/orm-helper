@@ -19,8 +19,8 @@
         "doctrine/orm": "~2.6.3",
         "respect/validation": "~1.1.31",
         "idealogica/log-x": "~1.1.0",
-        "psr/simple-cache": "~1.0.1",
-        "ext-json": "*"
+        "ext-json": "*",
+        "psr/simple-cache": "~1.0.0"
     },
     "require-dev":
     {
