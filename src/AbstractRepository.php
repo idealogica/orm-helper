@@ -75,11 +75,13 @@ class AbstractRepository extends EntityRepository
     /**
      * @param string $key
      * @param mixed $value
+     * @param null|int|\DateInterval $ttl
      *
      * @return bool
      * @throws \Psr\SimpleCache\InvalidArgumentException
      */
-    protected function cacheSet(string $key, $value) {
-        return $this->cache->set($key, $value);
+    protected function cacheSet(string $key, $value, $ttl = null)
+    {
+        return $this->cache->set($key, $value, $ttl);
     }
 }
