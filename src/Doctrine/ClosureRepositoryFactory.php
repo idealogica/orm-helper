@@ -1,9 +1,9 @@
 <?php
 namespace Idealogica\OrmHelper\Doctrine;
 
-use Doctrine\Common\Persistence\ObjectRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\Repository\RepositoryFactory as RepositoryFactoryInterface;
+use Doctrine\Persistence\ObjectRepository;
 
 /**
  * Class ClosureRepositoryFactory

@@ -2,10 +2,10 @@
 namespace Idealogica\OrmHelper\Doctrine;
 
 use Doctrine\Common\Cache\FilesystemCache;
-use Doctrine\Common\Persistence\Mapping\Driver\StaticPHPDriver;
 use Doctrine\Common\Proxy\AbstractProxyFactory;
 use Doctrine\ORM\EntityManager as DoctrineEntityManager;
 use Doctrine\ORM\Tools\Setup;
+use Doctrine\Persistence\Mapping\Driver\StaticPHPDriver;
 use Idealogica\LogX;
 
 /**
